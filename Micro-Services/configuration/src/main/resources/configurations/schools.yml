@@ -28,3 +28,8 @@ spring:
 application:
   config:
     students-url: http://localhost:8222/api/v1/students # URL of the students service, you can change it to the URL of the students service, they should be the same
+
+management:
+  tracing:
+    sampler:
+      probability: 1.0

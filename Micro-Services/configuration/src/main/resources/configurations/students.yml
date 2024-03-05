@@ -24,3 +24,7 @@ spring:
     show-sql: true
     database: POSTGRESQL
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+management:
+  tracing:
+    sampler:
+      probability: 1.0
