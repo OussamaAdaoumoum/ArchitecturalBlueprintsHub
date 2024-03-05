@@ -7,17 +7,17 @@ eureka:
 
 
 server:
-  port: 8070
+  port: 8090
 spring:
   application:
-    name: schools
-  config:
-    import: optional:configserver:http://localhost:8888
+    name: students
+#  config:
+#    import: optional:configserver:http://localhost:8888
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/schools
+    url: jdbc:postgresql://localhost:5432/students
     username: postgres
-    password: postgres
+    password: oussama2001
   jpa:
     hibernate:
       ddl-auto: create
